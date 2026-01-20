@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeCraft Pro | Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <custom-navbar></custom-navbar>
+    
+    <main class="container mx-auto px-4 py-12">
+        <!-- Hero Section -->
+        <section class="flex flex-col md:flex-row items-center justify-between mb-20">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm <span class="text-indigo-600">[Your Name]</span></h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-600">Professional [Your Title]</h2>
+                <p class="text-lg mb-8 text-gray-600 leading-relaxed">I specialize in [your expertise] with [X] years of experience helping businesses achieve their goals through innovative solutions and strategic thinking.</p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">Contact Me</a>
+                    <a href="#projects" class="border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-50 px-6 py-3 rounded-lg font-medium transition duration-300">View Work</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 bg-indigo-100 rounded-full overflow-hidden border-4 border-indigo-200">
+                        <img src="http://static.photos/people/640x360/42" alt="Profile" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 bg-white p-3 rounded-lg shadow-lg border border-gray-200">
+                        <div class="flex items-center">
+                            <div class="bg-indigo-100 p-2 rounded-full mr-2">
+                                <i data-feather="award" class="text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold">[X] Years</p>
+                                <p class="text-sm text-gray-500">Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
+            <div class="bg-white rounded-xl shadow-md p-8">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/3 mb-6 md:mb-0">
+                        <h3 class="text-xl font-semibold mb-4">Personal Info</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i data-feather="user" class="mr-2 text-indigo-600"></i>
+                                <span><strong>Name:</strong> [Your Name]</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="mail" class="mr-2 text-indigo-600"></i>
+                                <span><strong>Email:</strong> your.email@example.com</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="phone" class="mr-2 text-indigo-600"></i>
+                                <span><strong>Phone:</strong> (123) 456-7890</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="map-pin" class="mr-2 text-indigo-600"></i>
+                                <span><strong>Location:</strong> City, Country</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-2/3 md:pl-8">
+                        <h3 class="text-xl font-semibold mb-4">Professional Summary</h3>
+                        <p class="mb-6 text-gray-600 leading-relaxed">Detail-oriented professional with [X] years of experience in [your field]. Proven track record of [specific achievements]. Skilled in [key skills] with a passion for [relevant interests]. Adept at [specific abilities] and committed to delivering high-quality results.</p>
+                        
+                        <h3 class="text-xl font-semibold mb-4">Skills</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Skill 1</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Skill 2</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Skill 3</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Skill 4</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Skill 5</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Skill 6</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Work Experience</h2>
+            <div class="space-y-8">
+                <!-- Experience Item 1 -->
+                <div class="bg-white rounded-xl shadow-md p-8">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                        <h3 class="text-xl font-semibold">Job Title 1</h3>
+                        <span class="text-indigo-600 font-medium">Company Name 1</span>
+                        <span class="text-gray-500">Jan 2020 - Present</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Brief description of your role and responsibilities at this position.</p>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                        <li>Responsibility/Achievement 1</li>
+                        <li>Responsibility/Achievement 2</li>
+                        <li>Responsibility/Achievement 3</li>
+                    </ul>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="bg-white rounded-xl shadow-md p-8">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                        <h3 class="text-xl font-semibold">Job Title 2</h3>
+                        <span class="text-indigo-600 font-medium">Company Name 2</span>
+                        <span class="text-gray-500">Mar 2017 - Dec 2019</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Brief description of your role and responsibilities at this position.</p>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                        <li>Responsibility/Achievement 1</li>
+                        <li>Responsibility/Achievement 2</li>
+                        <li>Responsibility/Achievement 3</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Education</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Education Item 1 -->
+                <div class="bg-white rounded-xl shadow-md p-8">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold">Degree Name</h3>
+                        <span class="text-gray-500">2013 - 2017</span>
+                    </div>
+                    <p class="text-indigo-600 font-medium mb-2">University Name</p>
+                    <p class="text-gray-600">Brief description of your education, major, honors, or special achievements.</p>
+                </div>
+
+                <!-- Education Item 2 -->
+                <div class="bg-white rounded-xl shadow-md p-8">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold">Certification Name</h3>
+                        <span class="text-gray-500">2018</span>
+                    </div>
+                    <p class="text-indigo-600 font-medium mb-2">Institution Name</p>
+                    <p class="text-gray-600">Brief description of the certification and its relevance to your professional profile.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/technology/640x360/1" alt="Project 1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Project Title 1</h3>
+                        <p class="text-gray-600 mb-4">Brief description of the project, your role, and the technologies used.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full text-xs">Tech 1</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full text-xs">Tech 2</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full text-xs">Tech 3</span>
+                        </div>
+                        <a href="#" class="text-indigo-600 font-medium flex items-center">
+                            View Project <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/technology/640x360/2" alt="Project 2" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Project Title 2</h3>
+                        <p class="text-gray-600 mb-4">Brief description of the project, your role, and the technologies used.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full text-xs">Tech 1</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full text-xs">Tech 2</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full text-xs">Tech 3</span>
+                        </div>
+                        <a href="#" class="text-indigo-600 font-medium flex items-center">
+                            View Project <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/technology/640x360/3" alt="Project 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Project Title 3</h3>
+                        <p class="text-gray-600 mb-4">Brief description of the project, your role, and the technologies used.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full text-xs">Tech 1</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full text-xs">Tech 2</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full text-xs">Tech 3</span>
+                        </div>
+                        <a href="#" class="text-indigo-600 font-medium flex items-center">
+                            View Project <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Get In Touch</h2>
+            <div class="bg-white rounded-xl shadow-md p-8">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/2">
+                        <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                    <i data-feather="mail" class="text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Email</p>
+                                    <p class="text-gray-600">your.email@example.com</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                    <i data-feather="phone" class="text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Phone</p>
+                                    <p class="text-gray-600">(123) 456-7890</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                    <i data-feather="map-pin" class="text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Location</p>
+                                    <p class="text-gray-600">City, Country</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="mt-8">
+                            <h4 class="font-semibold mb-4">Connect with me</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition duration-300">
+                                    <i data-feather="linkedin" class="text-gray-700"></i>
+                                </a>
+                                <a href="#" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition duration-300">
+                                    <i data-feather="github" class="text-gray-700"></i>
+                                </a>
+                                <a href="#" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition duration-300">
+                                    <i data-feather="twitter" class="text-gray-700"></i>
+                                </a>
+                                <a href="#" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition duration-300">
+                                    <i data-feather="instagram" class="text-gray-700"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-xl font-semibold mb-4">Send Me a Message</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                                <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                            </div>
+                            <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300 w-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
